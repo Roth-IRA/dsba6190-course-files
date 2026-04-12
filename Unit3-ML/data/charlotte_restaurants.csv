@@ -1,0 +1,401 @@
+restaurant_id,name,cuisine,neighborhood,price_range,avg_rating,review_count,has_outdoor_seating,has_delivery,accepts_reservations,avg_review_length,pct_positive_keywords,lat,lon
+CLT-001,Olive Garden,italian,Greater Charlotte,1,3.5,10,False,True,True,34.8,0.0675,35.0863904,-80.8773407
+CLT-002,All American Pub,american,South End,2,4.5,73,True,False,False,33.0,0.0707,35.2166374,-80.8543953
+CLT-003,McAlister's Deli,sandwich,Greater Charlotte,2,4.0,500,False,True,True,31.5,0.0135,35.136598,-80.9365088
+CLT-004,Supperclub,american,Greater Charlotte,2,4.0,281,True,True,True,32.0,0.1099,35.1942206,-80.8751798
+CLT-005,Pizzeria Omaggio,pizza,Montford,1,2.5,410,True,True,False,31.5,0.0474,35.2132943,-80.8347543
+CLT-006,CO,american,Greater Charlotte,2,2.5,16,False,True,False,47.7,0.0056,35.174846,-80.8489056
+CLT-007,Sensi,italian,Greater Charlotte,1,2.0,7,False,True,False,36.5,0.0,35.0528355,-80.7735636
+CLT-008,Sabor,american,South End,1,4.5,29,False,True,True,41.5,0.0573,35.2142154,-80.8577072
+CLT-009,Midwood Smokehouse,american,Greater Charlotte,2,4.0,39,False,True,True,28.5,0.0708,35.1748576,-80.8471879
+CLT-010,Viva Chicken,international,Montford,1,4.0,191,True,False,False,48.3,0.0685,35.2134225,-80.8260188
+CLT-011,Tipsy Burro,american,Greater Charlotte,1,1.5,5,False,False,True,44.8,0.0123,35.2046424,-80.8085693
+CLT-012,Painted Rooster,chicken,Plaza Midwood,3,5.0,372,False,True,False,41.3,0.0457,35.2205144,-80.8118568
+CLT-013,Soma Grill,american,Matthews,3,4.5,28,False,True,False,39.6,0.0881,35.126283,-80.7077909
+CLT-014,Angry Ale's,american,Greater Charlotte,2,3.0,18,False,False,True,46.5,0.0832,35.1703289,-80.8500363
+CLT-015,Pollo Royal,american,Greater Charlotte,2,3.0,7,True,True,True,44.7,0.0363,35.163747,-80.8766106
+CLT-016,Pizza Hut,pizza,Greater Charlotte,2,3.0,5,True,True,True,40.8,0.0508,35.1408072,-80.7402373
+CLT-017,The Palm,american,Greater Charlotte,1,3.5,126,False,True,True,40.6,0.0503,35.1467408,-80.8277163
+CLT-018,Monterrey Mexican Restaurant,american,Matthews,1,4.0,40,True,True,False,47.0,0.041,35.1356395,-80.712975
+CLT-019,Edomae Sushi & Hibachi,japanese,Greater Charlotte,2,3.5,5,False,True,True,43.2,0.0733,35.3481216,-80.8591347
+CLT-020,Portofino's,italian,Greater Charlotte,2,3.0,5,False,True,True,38.5,0.0319,35.1606276,-80.8500237
+CLT-021,Applebee's,american,Greater Charlotte,2,4.0,21,False,True,False,34.8,0.1307,35.0856977,-80.8789922
+CLT-022,Taipei Express,chinese,Myers Park,2,2.5,461,False,False,False,43.5,0.0913,35.1998375,-80.8252807
+CLT-023,Joe Mama's Pizza & Grill,pizza,Greater Charlotte,1,3.0,24,True,True,True,45.5,0.0122,35.1337097,-80.9405986
+CLT-024,Morazan Restaurant,mexican,Greater Charlotte,2,3.5,5,True,True,False,41.0,0.0449,35.1482135,-80.8950879
+CLT-025,Chicken King,chicken,Greater Charlotte,1,3.5,24,False,True,False,51.2,0.0433,35.2958438,-80.7976175
+CLT-026,Nefelie's,greek,Uptown,2,4.5,23,True,False,True,45.0,0.1283,35.2259308,-80.8469259
+CLT-027,Beef 'N Bottle Steakhouse,steak_house,Greater Charlotte,2,3.0,5,True,True,False,45.7,0.0476,35.1792969,-80.8761399
+CLT-028,Koishi Restaurant & Sushi Bar,japanese,Greater Charlotte,2,4.0,33,True,True,False,43.0,0.0521,35.1759955,-80.797123
+CLT-029,JJ's Red Hots,hot_dog,Dilworth,1,4.0,25,True,True,False,49.2,0.0555,35.1999993,-80.8423628
+CLT-030,First Watch,american,Ballantyne,1,2.0,104,False,True,True,51.2,0.0,35.0570886,-80.8504709
+CLT-031,East Coast Wings +Grill,burger,Greater Charlotte,1,4.0,500,True,True,False,36.0,0.0238,35.3475967,-80.8587594
+CLT-032,Jasmine Grill and Kabab,mediterranean,Greater Charlotte,2,2.5,201,True,True,True,40.3,0.0738,35.2177676,-80.7946861
+CLT-033,Carmella's Pizza Grill,pizza,Greater Charlotte,2,2.0,23,False,True,False,38.3,0.0139,35.170858,-80.8501021
+CLT-034,Counter-,american,Greater Charlotte,1,4.5,6,False,True,False,45.8,0.1004,35.2274526,-80.8737405
+CLT-035,McAlister's Deli,sandwich,Greater Charlotte,1,5.0,500,False,True,True,54.3,0.0649,35.09743,-80.7791615
+CLT-036,River Grill & Buffet,asian,University City,2,4.5,39,False,True,True,45.0,0.045,35.2972546,-80.7472379
+CLT-037,Bossy Beulah's,american,Greater Charlotte,1,3.5,36,False,False,False,38.0,0.0093,35.2335866,-80.876497
+CLT-038,McNinch House,american,Uptown,2,2.5,34,True,True,True,34.3,0.0054,35.2316845,-80.8396523
+CLT-039,Pizza Hut,pizza,Greater Charlotte,2,4.0,48,False,False,True,38.2,0.093,35.1897078,-80.8749841
+CLT-040,Good Food on Montford,american,Greater Charlotte,1,3.5,28,False,True,True,47.5,0.0319,35.1709558,-80.8483223
+CLT-041,Crunch Bistro,salad,Greater Charlotte,1,2.5,14,False,True,False,46.3,0.0361,35.0788711,-80.8173687
+CLT-042,Johnny Brusco's New York Style Pizza,pizza,Greater Charlotte,3,3.5,15,False,True,True,41.6,0.0829,35.3267376,-80.9422437
+CLT-043,Restaurant Constance,american,Greater Charlotte,1,1.5,34,True,False,False,29.7,0.0278,35.2339721,-80.872704
+CLT-044,CAVA,mediterranean,Greater Charlotte,1,4.5,15,False,True,True,41.0,0.0297,35.1737775,-80.8500104
+CLT-045,Outback Steakhouse,american,Matthews,2,3.0,12,False,False,True,45.9,0.039,35.1354858,-80.7131688
+CLT-046,North Italia,italian,Ballantyne,2,4.0,42,False,True,False,42.2,0.0532,35.0580285,-80.8454542
+CLT-047,Royal Cafe and Creperie,crepe,Matthews,3,3.5,24,False,True,True,41.0,0.0379,35.1168154,-80.7193753
+CLT-048,Snooze,breakfast,Elizabeth,2,4.0,358,False,True,False,41.2,0.0587,35.2210201,-80.8155871
+CLT-049,Ru San's,sushi,Dilworth,1,4.0,5,True,True,True,42.0,0.1069,35.1976055,-80.8528156
+CLT-050,Waffle House,american,Greater Charlotte,1,3.0,190,False,True,True,37.8,0.0453,35.2399063,-80.9201073
+CLT-051,First Watch,american,Greater Charlotte,2,5.0,241,False,True,True,38.8,0.0601,35.1520447,-80.8416652
+CLT-052,The Cheesecake Factory,american,Greater Charlotte,2,4.5,5,False,True,True,41.9,0.0814,35.1516134,-80.8304453
+CLT-053,McAlister's Deli,sandwich,Greater Charlotte,2,4.5,21,True,True,True,51.5,0.0781,35.1653101,-80.8498629
+CLT-054,Bulldog Taproom/Social,american,Greater Charlotte,2,4.5,20,True,True,False,43.0,0.0619,35.2473793,-80.8046163
+CLT-055,Chuy's,tex-mex,Greater Charlotte,1,4.0,5,True,False,False,31.2,0.0516,35.0518056,-80.7676493
+CLT-056,Foxcroft Wine Co.,american,Dilworth,2,4.5,10,True,True,False,45.0,0.0923,35.2026719,-80.8452009
+CLT-057,Fortune Cookie III,chinese,Greater Charlotte,1,2.0,6,True,True,False,41.0,0.0,35.163761,-80.7391857
+CLT-058,Oh My Soul,american,NoDa,2,3.0,500,False,True,False,33.4,0.0814,35.2462746,-80.8066781
+CLT-059,Figo36,italian,NoDa,1,2.0,150,False,True,True,40.5,0.0472,35.2484013,-80.805838
+CLT-060,Don Pedro Mexican Restaurant,mexican,University City,1,3.5,251,True,True,True,45.1,0.0492,35.2944214,-80.7424708
+CLT-061,Chicken King,chicken,Steele Creek,1,3.5,108,False,False,False,40.5,0.019,35.1206007,-80.949198
+CLT-062,Rooster's,american,Greater Charlotte,2,3.0,6,True,True,True,38.5,0.0447,35.153758,-80.8278465
+CLT-063,Curry Gate,indian,Greater Charlotte,2,4.5,16,False,True,True,51.0,0.0488,35.2481083,-80.8289719
+CLT-064,RedEye Diner,american,Uptown,2,3.5,75,True,True,True,44.0,0.0813,35.2252054,-80.8421438
+CLT-065,McAlister's Deli,sandwich,Ballantyne,3,3.0,5,True,False,True,29.0,0.1276,35.0536597,-80.8469085
+CLT-066,Nestle Toll House,american,Greater Charlotte,1,4.0,106,False,True,True,38.8,0.0442,35.1527746,-80.8325007
+CLT-067,YAFO Kitchen,mediterranean,Elizabeth,1,2.5,24,False,False,False,38.9,0.0326,35.2210569,-80.8153674
+CLT-068,Sports Page Food & Spirits,american,Greater Charlotte,2,4.5,20,False,False,True,43.8,0.089,35.3038065,-80.9369007
+CLT-069,204 North,american,Uptown,1,2.0,106,False,True,True,41.0,0.0428,35.2280288,-80.8416252
+CLT-070,Pho Huong Que,asian,Greater Charlotte,3,5.0,70,True,True,False,50.3,0.0881,35.1637306,-80.7389043
+CLT-071,Taqueria Medina,mexican,Greater Charlotte,1,4.5,20,True,False,True,36.5,0.127,35.2271697,-80.7742768
+CLT-072,Akhana Asian Bistro,american,Plaza Midwood,3,3.0,211,True,False,False,46.0,0.0983,35.2209105,-80.8102491
+CLT-073,The Pizza Peel,pizza,Greater Charlotte,1,1.5,6,False,False,True,45.5,0.0415,35.176672,-80.797869
+CLT-074,Skyland Family Restaurant,american,Greater Charlotte,2,4.5,92,True,False,False,40.2,0.0699,35.1790368,-80.8765017
+CLT-075,Velvet Taco,mexican,Greater Charlotte,2,4.0,88,False,False,True,37.4,0.0758,35.1726948,-80.8488147
+CLT-076,Los Arcos,mexican,Greater Charlotte,4,4.0,22,False,True,False,48.2,0.0715,35.322561,-80.9450357
+CLT-077,Botiwalla,indian,Greater Charlotte,1,4.0,59,True,False,True,40.3,0.0628,35.2342279,-80.8278809
+CLT-078,Noodles & Company,pasta,University City,2,2.0,5,True,True,False,28.0,0.0517,35.3090139,-80.7477779
+CLT-079,Boxcar Bettys,chicken,Greater Charlotte,3,3.5,147,True,True,False,43.6,0.1054,35.2338867,-80.8276572
+CLT-080,Ten Seconds,noodle,Ballantyne,2,2.5,27,True,True,False,23.5,0.0,35.0685004,-80.8420218
+CLT-081,Bisonte Pizza Company,pizza,Uptown,2,4.5,16,True,True,True,41.3,0.0733,35.2325421,-80.8490483
+CLT-082,Monterrey Mexican Restaurant,american,University City,2,4.0,178,False,True,False,39.0,0.0995,35.2942131,-80.739899
+CLT-083,Chili's,tex-mex,Greater Charlotte,2,3.5,12,True,True,False,45.0,0.0353,35.1621274,-80.8868092
+CLT-084,Chef Kwo,american,Ballantyne,2,2.0,5,True,True,False,34.5,0.0,35.0533508,-80.8470593
+CLT-085,The Crust Pizza,pizza,Greater Charlotte,2,3.5,5,True,True,False,43.5,0.0778,35.0640838,-80.7707219
+CLT-086,Abugida,african,Greater Charlotte,2,3.5,90,False,True,True,49.8,0.0248,35.218024,-80.7939245
+CLT-087,Sushi Taku,sushi,South End,1,4.0,5,True,False,False,27.5,0.0179,35.2161201,-80.8527262
+CLT-088,Supperland,american,Plaza Midwood,1,4.0,500,False,True,True,45.4,0.0621,35.2189855,-80.8105129
+CLT-089,Sen Mee Noodle House,thai,Greater Charlotte,3,4.5,5,False,False,False,26.3,0.0312,35.2153145,-80.7812392
+CLT-090,Pei Wei,asian,University City,2,3.5,480,False,False,True,50.5,0.05,35.3098684,-80.7470082
+CLT-091,Chex Grill & Wings,american,Greater Charlotte,2,2.5,49,False,True,False,41.4,0.0397,35.2395853,-80.7978568
+CLT-092,Flower Child,american,Ballantyne,2,4.0,30,False,True,True,43.6,0.0676,35.0583084,-80.8455887
+CLT-093,Piada Italian Street Food,italian,University City,1,4.0,15,True,True,True,39.0,0.0621,35.3096931,-80.7478913
+CLT-094,Park Place Restaurant,american,Greater Charlotte,1,4.0,66,False,False,True,43.0,0.0879,35.0932745,-80.867835
+CLT-095,King Crab,seafood,Greater Charlotte,2,4.0,33,False,True,True,44.5,0.0465,35.1618354,-80.7377344
+CLT-096,Boiling Pot,asian,Greater Charlotte,1,3.5,194,False,False,True,41.2,0.031,35.349966,-80.8430374
+CLT-097,88 China Bistro,chinese,Montford,2,4.0,42,True,True,True,45.0,0.0679,35.212446,-80.8275831
+CLT-098,Thai House,thai,Greater Charlotte,1,3.5,45,False,True,True,38.8,0.0523,35.0890704,-80.8669522
+CLT-099,Iron Dish Korean BBQ,american,University City,3,1.5,20,False,True,True,45.5,0.0489,35.3170224,-80.7402445
+CLT-100,Taqueria Express,mexican,Greater Charlotte,3,2.5,32,True,True,False,54.0,0.0435,35.2033159,-80.7248355
+CLT-101,El Buen Gusto,mexican,Steele Creek,2,1.5,57,False,True,False,32.8,0.0064,35.1132586,-80.920004
+CLT-102,El Malo Tacos,mexican,Plaza Midwood,2,4.0,5,False,True,True,45.0,0.0673,35.2206035,-80.8100252
+CLT-103,Blaze Pizza,pizza,University City,1,3.5,5,True,False,False,35.5,0.0351,35.3105285,-80.7470089
+CLT-104,Great Wall of China,chinese,Greater Charlotte,2,3.5,111,False,False,True,40.9,0.0691,35.0856151,-80.847423
+CLT-105,Cedar Street Tavern,american,Uptown,2,4.5,46,True,True,False,29.8,0.0955,35.2337923,-80.849138
+CLT-106,Don Pedro Mexican,mexican,Greater Charlotte,1,3.0,27,False,True,False,36.0,0.0591,35.0841144,-80.8860959
+CLT-107,Pizza Hut,pizza,Greater Charlotte,2,3.5,36,True,False,False,44.6,0.0775,35.1399957,-80.9345935
+CLT-108,Bytes Cafe,cafeteria,Uptown,2,4.0,61,False,False,False,33.5,0.0874,35.234659,-80.8507119
+CLT-109,Soul Gastrolounge,tapas,Greater Charlotte,2,3.0,15,True,False,True,33.0,0.0469,35.2517163,-80.792564
+CLT-110,Open Rice,asian,Dilworth,2,2.0,10,False,False,False,42.3,0.0497,35.2120484,-80.8360607
+CLT-111,Mimosa Grill,american,Uptown,2,3.0,48,False,True,False,42.0,0.0888,35.2246374,-80.8455653
+CLT-112,Ladles,soup,Greater Charlotte,1,2.5,8,True,False,False,48.4,0.0332,35.0571194,-80.9345798
+CLT-113,Red@28th,american,Dilworth,2,4.5,66,True,False,True,43.2,0.0653,35.2014181,-80.8436945
+CLT-114,Zepeddie's Pizzeria,pizza,Greater Charlotte,2,4.5,5,True,False,True,42.8,0.0963,35.1828617,-80.8801093
+CLT-115,The Waterman,seafood,Greater Charlotte,1,4.0,173,True,True,True,35.0,0.0554,35.1998359,-80.8666563
+CLT-116,Romani's Macaroni Grill,american,Greater Charlotte,1,4.5,73,False,False,True,46.0,0.1117,35.314604,-80.7627275
+CLT-117,Mezzo Market,american,Greater Charlotte,1,4.5,53,False,True,False,41.3,0.0444,35.2318159,-80.8074912
+CLT-118,Midwood Smokehouse,american,Elizabeth,2,3.0,161,False,False,True,38.4,0.0604,35.2209681,-80.8150541
+CLT-119,Ichiban,chinese,Greater Charlotte,3,4.5,458,False,True,False,46.7,0.0918,35.2048413,-80.7213819
+CLT-120,Top's China,chinese,Greater Charlotte,1,4.0,169,True,True,True,40.5,0.0767,35.2644041,-80.8558297
+CLT-121,Draught,american,Uptown,2,4.5,5,False,True,False,44.8,0.0807,35.2283896,-80.8546922
+CLT-122,Muraya,american,South End,1,4.5,5,False,True,False,41.7,0.0678,35.2167443,-80.8542917
+CLT-123,Noble Smoke,barbecue,Greater Charlotte,3,3.5,13,True,False,True,31.0,0.082,35.2339322,-80.8768896
+CLT-124,The Penguin,american,Dilworth,2,2.5,37,False,True,False,36.0,0.0652,35.1998368,-80.841195
+CLT-125,Leroy Fox Southend,american,South End,2,3.0,79,False,False,True,43.0,0.1024,35.2139005,-80.8579383
+CLT-126,LongHorn Steakhouse,steak_house,Greater Charlotte,2,3.5,11,True,False,True,44.8,0.0404,35.0886397,-80.8770057
+CLT-127,Golden Owl Tavern,american,University City,1,4.5,47,True,False,False,27.5,0.0333,35.3101898,-80.7450598
+CLT-128,Philly Connection,sandwich,Matthews,1,4.5,11,True,True,True,33.0,0.0639,35.1255566,-80.7084628
+CLT-129,Pei Wei Asian Express,american,Greater Charlotte,1,1.5,14,True,True,True,45.2,0.03,35.1531109,-80.8327597
+CLT-130,McCormick & Schmick's,seafood,Uptown,2,3.5,5,True,False,False,39.2,0.0378,35.226461,-80.8445484
+CLT-131,Cherry Blossom,chinese,Greater Charlotte,2,3.5,8,False,True,True,43.0,0.0258,35.0953971,-80.7783438
+CLT-132,Burtons Grill & Bar of Charlotte,pizza,Greater Charlotte,4,3.0,5,False,True,True,43.5,0.0489,35.1726651,-80.8489383
+CLT-133,South 21 Restaurant (Brookshire),american,Greater Charlotte,4,2.5,8,True,True,False,55.5,0.0096,35.2862055,-80.9058245
+CLT-134,Bonefish Grill,seafood,Greater Charlotte,2,3.5,179,False,True,True,39.5,0.0192,35.0887298,-80.8451472
+CLT-135,Chuck E. Cheese,pizza,Greater Charlotte,2,4.5,8,False,False,False,46.3,0.0674,35.0861735,-80.8501102
+CLT-136,Jasmine Grill,american,Greater Charlotte,2,3.5,500,True,True,True,36.5,0.0741,35.168524,-80.8751098
+CLT-137,Red Ginger,japanese,Uptown,2,4.0,76,False,True,False,52.0,0.039,35.2240341,-80.8455323
+CLT-138,Olive Garden,italian,Greater Charlotte,1,4.0,47,False,False,True,52.2,0.0641,35.3483975,-80.8546243
+CLT-139,Frida's Mexican Cantina,mexican,Greater Charlotte,2,3.5,9,True,True,True,32.0,0.0,35.0891158,-80.8678428
+CLT-140,Chili's,tex-mex,Greater Charlotte,1,5.0,104,False,False,True,44.8,0.0464,35.1471688,-80.7257101
+CLT-141,Sabor Latin Street Grill,american,University City,3,5.0,14,True,True,True,54.5,0.0644,35.310722,-80.7460299
+CLT-142,Skrimp Shack,seafood,Greater Charlotte,2,3.0,43,False,True,True,47.0,0.0762,35.2152853,-80.781116
+CLT-143,Fu Lin,chinese,Greater Charlotte,1,3.5,500,False,True,False,42.2,0.0352,35.1872676,-80.7584156
+CLT-144,Crispy Crepe,american,South End,2,3.0,30,False,True,True,41.2,0.0389,35.2147961,-80.8546608
+CLT-145,Showmars,american,Dilworth,2,3.0,208,True,False,True,41.3,0.0971,35.1991898,-80.8417012
+CLT-146,Ginbu 401,chinese,Greater Charlotte,1,1.5,12,True,True,False,53.8,0.0175,35.204522,-80.824127
+CLT-147,Midnight Society Cafe,american,Greater Charlotte,1,4.0,34,False,False,False,49.2,0.0761,35.2255737,-80.8247193
+CLT-148,Deluxe Fun Dining,american,Uptown,2,3.5,500,False,True,False,42.0,0.0658,35.2281749,-80.8465981
+CLT-149,Bob Evans,american,Greater Charlotte,2,2.0,13,False,True,False,47.8,0.0382,35.3476465,-80.8422205
+CLT-150,Dos Caminos,mexican,Uptown,2,3.0,500,False,False,True,33.2,0.0783,35.2230615,-80.8486917
+CLT-151,Da Vinci's Pizza,pizza,University City,2,4.5,105,False,False,True,43.6,0.087,35.2968115,-80.7568879
+CLT-152,Hibachi Grill,japanese,Greater Charlotte,2,3.0,15,True,True,False,33.8,0.0435,35.2017785,-80.780868
+CLT-153,Bad Daddy's Burger Bar,american,Greater Charlotte,2,2.5,94,False,True,False,41.5,0.072,35.2193127,-80.9425582
+CLT-154,Los Arcos Mexican Restaurant,mexican,University City,2,3.5,158,True,True,True,46.5,0.0582,35.3100149,-80.7542213
+CLT-155,Chamos Grill,venezuelan,Greater Charlotte,2,5.0,92,True,True,True,47.0,0.0844,35.1476237,-80.7457713
+CLT-156,Superica,tex-mex,South End,1,3.0,5,True,True,False,41.0,0.0171,35.2117739,-80.8603349
+CLT-157,IHOP,breakfast,Greater Charlotte,1,4.0,11,False,True,True,43.0,0.0425,35.1438016,-80.9315113
+CLT-158,Tintin Cafe,japanese,Greater Charlotte,1,4.0,24,False,True,True,34.0,0.0827,35.3408866,-80.7700166
+CLT-159,Emmy Squared Pizza,pizza,South End,2,3.0,32,True,False,False,36.5,0.0497,35.2115306,-80.8614828
+CLT-160,Tavern On The Tracks,american,South End,2,4.0,92,False,False,False,50.0,0.0134,35.2169331,-80.8548131
+CLT-161,Waffle House,american,Greater Charlotte,2,3.5,47,True,True,True,34.5,0.0312,35.2875615,-80.7607541
+CLT-162,Thai Taste,american,South End,1,4.0,5,False,False,False,39.8,0.074,35.2099796,-80.8559654
+CLT-163,Ava Pizza,pizza,Greater Charlotte,1,4.0,64,True,False,True,40.0,0.0551,35.2338099,-80.8277848
+CLT-164,Mezeh Mediterranean Grill,mediterranean,University City,1,4.0,91,False,True,True,39.3,0.076,35.3091159,-80.7476858
+CLT-165,La Unica,mexican,Elizabeth,1,2.0,84,True,True,True,51.5,0.0407,35.2216924,-80.8189202
+CLT-166,Crown Point Crabhouse,seafood,Greater Charlotte,2,4.5,187,False,True,True,35.0,0.0667,35.1453183,-80.7262543
+CLT-167,Monterrey Mexican Restaurant,mexican,University City,1,3.5,128,False,True,False,39.9,0.07,35.2938591,-80.7394098
+CLT-168,Hibachi Express,japanese,Greater Charlotte,2,3.0,72,True,True,False,31.0,0.1604,35.1904121,-80.9218541
+CLT-169,Doan's Vietnamese Cuisine,vietnamese,Greater Charlotte,2,2.0,32,True,True,True,51.7,0.0278,35.1547158,-80.8752315
+CLT-170,McAlister's Deli,sandwich,Matthews,1,4.0,5,False,True,True,52.5,0.0982,35.129137,-80.7031227
+CLT-171,Ruth's Chris Steak House,american,Uptown,2,4.0,69,True,True,False,30.0,0.0995,35.2261894,-80.8451826
+CLT-172,Rada,american,Greater Charlotte,2,1.5,49,True,False,False,30.5,0.0,35.1742358,-80.840226
+CLT-173,STK Charlotte,steak_house,Uptown,1,4.0,54,True,True,True,36.8,0.069,35.225131,-80.8431687
+CLT-174,Viva Chicken,american,Greater Charlotte,2,3.0,5,False,False,True,39.9,0.0254,35.169875,-80.8510904
+CLT-175,KPOT Korean BBQ & Hot Pot,american,Greater Charlotte,2,4.0,6,False,False,False,33.8,0.05,35.0886285,-80.8655989
+CLT-176,Chubz Famous Chiliburgers,burger,Greater Charlotte,2,2.5,179,False,False,True,36.2,0.0316,35.1800842,-80.8841682
+CLT-177,Maria's Grill,american,Greater Charlotte,1,4.0,33,True,True,True,33.6,0.0638,35.3000387,-80.8017971
+CLT-178,Brixx Wood Fired Pizza,pizza,Dilworth,2,3.5,101,False,True,True,40.2,0.0632,35.2008345,-80.8438446
+CLT-179,Ipanema Grille & Steakhouse,american,Matthews,2,4.5,37,False,False,True,44.0,0.0763,35.1287185,-80.7024489
+CLT-180,Yummy Sushi,sushi,Greater Charlotte,1,2.5,37,False,False,True,49.0,0.0209,35.154885,-80.8752205
+CLT-181,Dickey's BBQ Pit,barbecue,Ballantyne,2,3.5,150,False,False,True,37.6,0.0454,35.0537365,-80.8469787
+CLT-182,The Improper Pig,barbecue,Plaza Midwood,3,2.5,16,True,True,False,48.0,0.0355,35.2201063,-80.811956
+CLT-183,Ted's Montana Grill,american,Greater Charlotte,2,4.5,41,False,True,False,47.0,0.0366,35.0510118,-80.7676408
+CLT-184,Midwood Smokehouse,american,Greater Charlotte,1,4.5,17,True,False,False,49.0,0.1254,35.2185259,-80.9451259
+CLT-185,L'Ostrica,american,Greater Charlotte,2,3.0,18,True,False,False,40.6,0.0652,35.167166,-80.8501927
+CLT-186,The Goodyear House,american,NoDa,1,4.0,22,False,True,False,42.2,0.0609,35.2459722,-80.8070675
+CLT-187,Ciro's Italian Restaurant,italian,University City,1,4.5,50,False,True,True,32.8,0.0531,35.3098347,-80.7493179
+CLT-188,Pizza Hut,pizza,Greater Charlotte,1,4.0,17,True,True,True,44.7,0.0133,35.3337607,-80.7951406
+CLT-189,Showmars,greek,Matthews,1,4.0,245,False,False,True,38.5,0.1035,35.134898,-80.7143483
+CLT-190,Lupitas Carniceria y Tortilleria,american,Greater Charlotte,1,3.0,9,False,True,False,43.5,0.0251,35.163865,-80.8766112
+CLT-191,U.S. Fried Chicken,chicken,Greater Charlotte,1,2.0,26,False,True,False,49.5,0.0242,35.3006687,-80.8021917
+CLT-192,P.F. Chang's,asian,Greater Charlotte,2,4.5,18,False,True,False,36.0,0.0929,35.3488013,-80.8532087
+CLT-193,Phở Cali Thai,vietnamese,Greater Charlotte,1,4.5,328,False,True,True,57.0,0.0976,35.1339325,-80.9391489
+CLT-194,Omakase,sushi,Greater Charlotte,1,4.0,48,False,True,False,39.5,0.0778,35.1710754,-80.8075853
+CLT-195,Farley's Pizzeria,pizza,Greater Charlotte,2,3.5,173,False,True,False,40.3,0.0635,35.3372342,-80.7566417
+CLT-196,The Roasting Company,chicken,Greater Charlotte,2,3.5,5,True,True,False,48.7,0.07,35.1709074,-80.8497036
+CLT-197,Capishe,italian,South End,2,4.0,53,True,True,False,48.5,0.0471,35.2171915,-80.8480777
+CLT-198,Seoul Food Meat Co.,korean,South End,1,4.5,139,True,True,False,40.8,0.0825,35.2192467,-80.8576451
+CLT-199,Buffalo Wings & Rings,wings,Greater Charlotte,1,4.5,40,True,False,False,47.7,0.0403,35.0642684,-80.7713978
+CLT-200,Mr. Tokyo Japanese Restaurant,japanese,Greater Charlotte,1,4.5,183,True,True,False,48.7,0.1472,35.0883676,-80.8606974
+CLT-201,Common Market - Oakwold,american,Greater Charlotte,1,4.0,16,True,False,True,40.8,0.0726,35.1940545,-80.7857278
+CLT-202,La Caseta,american,Greater Charlotte,1,2.0,309,False,False,False,33.7,0.0142,35.2452346,-80.8321403
+CLT-203,On The Border,tex-mex,Greater Charlotte,1,2.5,500,False,False,True,47.9,0.0261,35.3481961,-80.8560624
+CLT-204,Greenway Restaurant,american,Elizabeth,1,4.5,20,True,False,True,39.5,0.0898,35.2201883,-80.8295982
+CLT-205,Thai Taste,thai,Matthews,1,4.0,18,False,True,True,44.0,0.0459,35.1166882,-80.719163
+CLT-206,Red Robin,burger,Greater Charlotte,2,1.5,331,True,False,True,49.5,0.03,35.3168116,-80.7717169
+CLT-207,French Quarter Restaurant,american,Uptown,1,2.5,402,False,True,True,44.2,0.0282,35.2259909,-80.8470085
+CLT-208,Fleming's,steak_house,Uptown,1,4.0,16,True,True,True,32.0,0.0215,35.225542,-80.8427582
+CLT-209,Pizza Hut,pizza,Ballantyne,2,1.5,18,False,False,True,36.2,0.01,35.0534256,-80.8469365
+CLT-210,Monterrey’s Restaurant,american,Greater Charlotte,2,2.5,23,True,True,False,49.0,0.0446,35.0903211,-80.8691022
+CLT-211,The Mad Greek,greek,Greater Charlotte,1,4.0,5,False,True,True,42.4,0.0755,35.169868,-80.8756395
+CLT-212,Libretto's Pizzaria,pizza,Ballantyne,2,4.0,8,True,True,True,42.6,0.0343,35.0539996,-80.8469359
+CLT-213,Outback Steakhouse,american,Greater Charlotte,2,4.0,7,True,True,True,37.2,0.0341,35.2905594,-80.7623966
+CLT-214,Hawthorne's NY Pizza & Bar,pizza,South End,1,3.0,11,True,False,False,40.2,0.0474,35.2152861,-80.8577064
+CLT-215,Hillside Caribbean Cuisine,caribbean,Greater Charlotte,2,4.0,34,False,True,False,39.5,0.0736,35.2267919,-80.8191168
+CLT-216,Pita Kabob Grill,arab,Matthews,2,3.0,51,False,False,False,40.8,0.0651,35.1154768,-80.7207439
+CLT-217,Mert's Heart And Soul,southern,Uptown,1,3.5,384,False,True,True,43.9,0.0811,35.2272922,-80.8402846
+CLT-218,Salud Cervezeria,latin_food,Greater Charlotte,1,4.0,7,True,False,True,38.0,0.0967,35.2478558,-80.8041412
+CLT-219,Machu Picchu,peruvian,Greater Charlotte,2,4.0,161,False,True,True,37.8,0.075,35.084898,-80.8876856
+CLT-220,Blasian Asian Way,korean,Greater Charlotte,2,4.5,25,False,True,True,36.7,0.0702,35.2452717,-80.8321917
+CLT-221,Yama Izakaya,japanese,Elizabeth,1,4.0,33,False,True,False,36.3,0.037,35.2205432,-80.8156569
+CLT-222,Chex Grill & Wings,american,University City,1,4.0,100,True,False,False,36.0,0.0577,35.3021897,-80.7478522
+CLT-223,Bankers Raw Bar,american,Greater Charlotte,1,2.0,6,False,True,True,39.9,0.0263,35.1804936,-80.8841225
+CLT-224,TGI Fridays,american,Greater Charlotte,2,3.5,64,False,True,False,37.0,0.0789,35.3494172,-80.8513258
+CLT-225,Domino's Pizza,pizza,Greater Charlotte,2,3.0,46,False,True,False,45.3,0.0624,35.1383273,-80.7322386
+CLT-226,Cabo Fish Taco,american,Ballantyne,1,3.0,76,False,False,False,32.0,0.0,35.0604831,-80.838534
+CLT-227,Chen Fu,american,Matthews,2,5.0,55,True,True,False,35.0,0.1077,35.1357727,-80.7128228
+CLT-228,Soul Central,soul,University City,2,3.5,500,True,True,True,36.2,0.063,35.3053112,-80.7510254
+CLT-229,Gyu-Kaku,japanese,Greater Charlotte,1,4.5,13,True,True,False,42.0,0.0651,35.2182372,-80.8429595
+CLT-230,Tsuki,japanese,Ballantyne,1,4.0,15,True,True,False,32.6,0.0647,35.0685259,-80.8421221
+CLT-231,Chicken King,american,Greater Charlotte,2,4.5,13,False,True,False,44.1,0.097,35.1466861,-80.8956539
+CLT-232,Hawthorne's Pizza,pizza,Greater Charlotte,2,3.5,15,False,False,False,36.6,0.033,35.1780571,-80.7563161
+CLT-233,Halal Food Cart,mediterranean,Uptown,2,4.0,13,False,False,True,42.2,0.0672,35.2272259,-80.8428838
+CLT-234,Viet Thai Noodle House,asian,Greater Charlotte,2,3.5,221,False,True,False,39.0,0.0867,35.0897704,-80.8581592
+CLT-235,The Jimmy,italian,Greater Charlotte,1,3.0,315,False,True,True,35.2,0.0802,35.1740811,-80.8396863
+CLT-236,American Roadside Burgers,burger,Uptown,2,4.0,14,True,False,False,45.8,0.0472,35.2254156,-80.848404
+CLT-237,Sabor Latin Street Grill,mexican,Ballantyne,2,3.0,10,True,True,False,40.3,0.1468,35.0557193,-80.8533863
+CLT-238,Seoul Poke Bowl,korean,Greater Charlotte,1,1.5,73,False,False,True,42.6,0.0296,35.1925456,-80.873235
+CLT-239,Aroma,indian,Uptown,1,4.0,15,False,True,True,53.3,0.0577,35.2298783,-80.8395114
+CLT-240,1900 Mexican,mexican,Greater Charlotte,1,2.5,94,True,True,True,42.0,0.0079,35.1610501,-80.8493057
+CLT-241,Morazan Restaurant,mexican,Greater Charlotte,1,4.5,48,True,False,False,40.0,0.0634,35.2110869,-80.7605295
+CLT-242,Mi Pueblo Mexican Grill,mexican,Greater Charlotte,1,5.0,5,False,False,False,46.5,0.0791,35.1399898,-80.7352313
+CLT-243,Jason's Deli,sandwich,Greater Charlotte,1,4.5,382,False,True,True,35.5,0.102,35.2912766,-80.7645038
+CLT-244,Greystone Pub,american,Greater Charlotte,1,3.5,500,False,True,False,48.8,0.0325,35.1969891,-80.8690372
+CLT-245,The Original Pancake House,breakfast,Montford,1,1.5,14,False,True,False,34.7,0.0207,35.2135679,-80.8323556
+CLT-246,Kabuto's,american,Greater Charlotte,2,4.5,19,False,True,True,36.4,0.0828,35.088206,-80.8511347
+CLT-247,Diamond Restaurant,american,Plaza Midwood,2,3.5,55,True,True,False,52.2,0.0505,35.2190733,-80.8132371
+CLT-248,TGI Fridays,american,University City,2,5.0,59,False,True,False,36.5,0.1225,35.30784,-80.754252
+CLT-249,CAVA,mediterranean,University City,2,5.0,98,True,False,False,30.9,0.0781,35.3099275,-80.7478454
+CLT-250,Pizza Hut,pizza,Greater Charlotte,2,4.5,500,False,True,True,27.0,0.0986,35.2142401,-80.782182
+CLT-251,Marina's Tapas,spanish,Greater Charlotte,1,3.0,27,True,False,True,43.8,0.0578,35.2339372,-80.827573
+CLT-252,Chili's,tex-mex,Greater Charlotte,2,3.5,10,False,False,False,40.0,0.0931,35.0879977,-80.859146
+CLT-253,Ilios Noche Restaurant,greek,Greater Charlotte,2,4.5,5,False,True,True,30.8,0.066,35.1172804,-80.8569259
+CLT-254,Beantown Tavern,american,Matthews,2,3.5,11,True,False,False,45.2,0.0453,35.1164149,-80.7194303
+CLT-255,New Zealand Cafe,sushi,Greater Charlotte,2,2.5,34,False,True,True,48.2,0.0395,35.1405524,-80.73766
+CLT-256,Showmars,fusion,Greater Charlotte,1,4.0,500,False,True,False,45.3,0.0487,35.153129,-80.8328487
+CLT-257,Como en Mexico,mexican,Greater Charlotte,1,4.5,16,True,False,False,35.6,0.0529,35.2463985,-80.7871103
+CLT-258,PIE.ZAA,pizza,South End,1,4.0,50,True,True,False,47.7,0.0618,35.2163673,-80.8563374
+CLT-259,Tony's Pizza,pizza,Greater Charlotte,2,4.0,34,False,True,False,38.6,0.0723,35.1860605,-80.876119
+CLT-260,Salsarita's Fresh Mexican Grille,mexican,Greater Charlotte,2,2.5,221,False,True,True,37.3,0.0301,35.2204959,-80.9438286
+CLT-261,Thai House,thai,Greater Charlotte,1,4.0,500,False,True,False,48.0,0.0355,35.1764653,-80.7997098
+CLT-262,Chinese Fast Food,chinese,NoDa,3,5.0,15,False,True,False,41.8,0.0911,35.247198,-80.8185552
+CLT-263,Carrabba's Italian Grill,italian,Matthews,2,2.5,16,False,True,False,42.2,0.0365,35.1275773,-80.7079411
+CLT-264,Sunrise,american,Greater Charlotte,1,4.0,177,True,False,True,28.5,0.0351,35.2024691,-80.7358058
+CLT-265,Adisil,indian,Greater Charlotte,1,4.5,101,False,False,True,29.5,0.0935,35.3373726,-80.7569223
+CLT-266,The Crown,american,Greater Charlotte,1,4.0,500,False,True,False,36.3,0.0826,35.2249047,-80.9472104
+CLT-267,Pinky's Westside Grill,regional,Greater Charlotte,1,4.0,87,False,False,True,33.6,0.0415,35.2291539,-80.8674098
+CLT-268,Hawthorne's NY Pizza & Bar,pizza,Montford,1,4.0,20,True,True,False,37.8,0.1136,35.2158807,-80.8216178
+CLT-269,Mama's Caribbean Grill,american,Plaza Midwood,1,3.5,88,False,True,True,49.7,0.0744,35.2201753,-80.8131856
+CLT-270,Piada Italian Street Food,italian,Greater Charlotte,1,3.0,195,True,True,True,44.8,0.0386,35.1751433,-80.8018116
+CLT-271,Mac's Speed Shop,barbecue,Greater Charlotte,1,4.5,125,False,True,True,38.0,0.0902,35.2029633,-80.8643721
+CLT-272,Kabuto Japanese Steak House,japanese,University City,2,4.5,77,False,True,True,42.5,0.064,35.2941744,-80.7398926
+CLT-273,Passage to India Indian Cuisine,indian,University City,1,4.5,183,False,True,False,38.8,0.0612,35.3056859,-80.7235393
+CLT-274,Texas Roadhouse,steak_house,Matthews,2,4.5,214,False,False,True,39.7,0.0694,35.1258937,-80.7062154
+CLT-275,Krazy Curry Express,indian,Uptown,1,4.0,297,False,False,False,38.8,0.1146,35.2257792,-80.843165
+CLT-276,Paco's Tacos & Tequila,mexican,Greater Charlotte,3,3.5,96,False,True,True,39.3,0.0305,35.1562702,-80.8307997
+CLT-277,Joy's Biryani N Kebabs,indian,Greater Charlotte,1,4.5,27,False,False,False,45.9,0.0699,35.0873903,-80.8863755
+CLT-278,Banh Mi Brothers,vietnamese,University City,1,4.0,44,True,True,True,42.7,0.0775,35.3037555,-80.7492116
+CLT-279,Let's Meat KBBQ,american,South End,3,4.0,227,False,True,False,54.2,0.0575,35.2191335,-80.8577334
+CLT-280,Denny's,american,Greater Charlotte,2,4.5,10,True,True,False,41.0,0.0864,35.307571,-80.8511807
+CLT-281,Sal's Pizza Factory,pizza,Dilworth,2,4.5,63,True,False,False,36.2,0.0632,35.2000654,-80.8524841
+CLT-282,Papi Queso,sandwich,Greater Charlotte,1,3.5,19,False,False,False,39.8,0.0948,35.2343379,-80.8274802
+CLT-283,Fortune Cookie,chinese,Montford,1,3.5,37,True,True,False,40.0,0.0764,35.2122217,-80.8292947
+CLT-284,Lupies Cafe,american,Greater Charlotte,2,2.0,253,False,False,True,42.0,0.0087,35.2042526,-80.808733
+CLT-285,Nakato Japanese Restaurant & Sushi Bar,japanese,University City,2,4.0,48,True,True,False,29.5,0.0798,35.3058773,-80.7541512
+CLT-286,Brixx Wood Fired Pizza,pizza,Greater Charlotte,2,1.5,38,False,False,True,51.0,0.0091,35.146598,-80.8088912
+CLT-287,Yafo Kitchen,mediterranean,Dilworth,2,3.5,5,True,True,False,37.7,0.094,35.2031248,-80.8457645
+CLT-288,Little China Restaurant,chinese,Greater Charlotte,1,4.0,112,True,False,False,42.7,0.0821,35.2126083,-80.7833928
+CLT-289,Cicis,pizza,Matthews,2,3.0,96,True,False,True,38.4,0.063,35.1339238,-80.7102166
+CLT-290,Bella Fresco Mediterranean,mediterranean,Greater Charlotte,1,4.0,500,True,True,True,40.9,0.0357,35.0954107,-80.7791836
+CLT-291,Showmars,regional,Greater Charlotte,1,1.5,22,False,False,True,52.5,0.0,35.1470469,-80.9245928
+CLT-292,Carrabba's Italian Grill,italian,South End,2,2.0,50,True,False,False,32.5,0.0592,35.2139184,-80.8556348
+CLT-293,Chili's,tex-mex,University City,2,4.5,52,True,False,True,51.5,0.0475,35.30869,-80.755497
+CLT-294,Bao & Broth,american,Greater Charlotte,1,3.5,400,False,True,True,40.0,0.0096,35.2341492,-80.8273
+CLT-295,Famous Toastery,american,University City,1,2.5,31,True,False,False,43.7,0.0461,35.3102621,-80.7494921
+CLT-296,Vacant Restaurant,american,Greater Charlotte,2,4.0,54,False,True,True,37.8,0.0509,35.1457489,-80.8256511
+CLT-297,Waffle House,american,Greater Charlotte,1,4.0,90,True,True,False,40.0,0.0493,35.1706847,-80.7439504
+CLT-298,Hwy 55 Burgers Shakes & Fries,burger,University City,2,3.0,47,True,True,False,39.3,0.0449,35.2970821,-80.7575511
+CLT-299,Bonefish Grill,seafood,Matthews,1,4.0,18,True,True,True,33.8,0.0725,35.12625,-80.7066671
+CLT-300,Ruby Sunshine,american,South End,2,2.0,48,True,True,False,41.3,0.0792,35.2197506,-80.8574753
+CLT-301,UDON,japanese,Greater Charlotte,2,2.0,185,False,True,False,49.2,0.0407,35.2407065,-80.8142923
+CLT-302,Rooster's Wood-fired Kitchen,american,Uptown,1,4.0,7,False,True,False,35.0,0.0857,35.2267108,-80.8409945
+CLT-303,Stone Mountain Grill,american,Ballantyne,1,4.0,43,False,False,True,39.7,0.0588,35.0578725,-80.8514186
+CLT-304,Mi Pais Tienda y Antojitos,american,Greater Charlotte,1,4.0,12,False,True,False,42.9,0.0555,35.1861626,-80.8761149
+CLT-305,Waffle House,american,Steele Creek,1,4.0,223,True,False,False,42.9,0.0632,35.113117,-80.9222595
+CLT-306,Chex Grill & Wings,american,Greater Charlotte,3,5.0,5,True,True,False,40.2,0.0755,35.2026891,-80.7402299
+CLT-307,Tora Sushi,sushi,Greater Charlotte,1,4.0,15,False,False,False,37.4,0.0393,35.2288614,-80.8614297
+CLT-308,QC Pour House,american,South End,2,3.5,63,False,True,False,45.3,0.0559,35.210813,-80.8620175
+CLT-309,Los Pinos,mexican,Greater Charlotte,1,4.5,393,False,True,True,38.0,0.0607,35.1916931,-80.7975598
+CLT-310,La Sa-Son,american,Greater Charlotte,2,3.0,32,False,False,True,37.8,0.0128,35.1861041,-80.8761146
+CLT-311,Calle Sol Latin Café & Cevicheria,south_american,Plaza Midwood,2,3.5,15,True,False,True,36.1,0.0525,35.2190795,-80.8124196
+CLT-312,Whiskey River,american,Greater Charlotte,2,2.0,500,True,True,False,37.8,0.019,35.2231669,-80.9403522
+CLT-313,Barcelona Wine Bar,tapas,South End,2,1.5,5,False,False,False,46.0,0.0416,35.2115482,-80.8601525
+CLT-314,Cabo Fish Taco,american,NoDa,1,5.0,5,True,False,True,45.5,0.0922,35.2471262,-80.8057495
+CLT-315,La Isla Tropical,american,Greater Charlotte,1,4.5,70,False,False,True,52.6,0.0838,35.2338037,-80.8727756
+CLT-316,Buffalo Wild Wings,wings,Greater Charlotte,2,4.0,16,True,False,True,31.5,0.1117,35.1460461,-80.7249633
+CLT-317,The Waterman Fish Bar,seafood,Greater Charlotte,2,3.5,7,False,False,False,41.5,0.0597,35.218308,-80.9424564
+CLT-318,Phở Ngon,vietnamese,Greater Charlotte,3,2.5,106,False,False,False,44.2,0.0353,35.1380625,-80.9355893
+CLT-319,Cicis,pizza,Greater Charlotte,1,2.5,52,True,False,True,42.9,0.0503,35.0901879,-80.8687412
+CLT-320,The King’s Kitchen,southern,Uptown,2,3.0,15,False,True,False,35.8,0.0298,35.2279553,-80.844195
+CLT-321,O-Ku,sushi,South End,2,4.0,5,False,True,False,39.2,0.0519,35.2095731,-80.8604037
+CLT-322,Thien Phu,vietnamese,Greater Charlotte,1,4.0,136,False,True,True,53.7,0.0665,35.217717,-80.7929982
+CLT-323,The Wafflery,breakfast,Elizabeth,1,4.0,97,True,False,False,38.9,0.054,35.2236841,-80.8271503
+CLT-324,Souper Salad,american,Matthews,2,3.0,30,False,True,True,47.0,0.0335,35.1309132,-80.7121978
+CLT-325,Providence Road Sundries,american,Myers Park,2,5.0,500,False,False,True,40.8,0.0786,35.1865857,-80.8220313
+CLT-326,Ilios Crafted Greek,greek,South End,2,4.0,6,True,True,False,34.7,0.0503,35.2177542,-80.8586226
+CLT-327,Salted Melon,american,Myers Park,1,4.0,5,True,True,True,39.5,0.0684,35.1980294,-80.8259539
+CLT-328,Condado Tacos,mexican,South End,2,4.0,12,False,True,True,39.0,0.0699,35.2152515,-80.8567631
+CLT-329,Poplar,american,Uptown,1,3.5,33,False,False,False,32.0,0.0741,35.2336202,-80.8381676
+CLT-330,Sabor Latin Street Grill,mexican,NoDa,1,3.0,52,True,False,True,39.8,0.0319,35.2472233,-80.8055827
+CLT-331,PUPUSA 503 Salvadoran Deli,international,University City,1,3.5,24,True,True,True,51.3,0.0639,35.2944404,-80.7448151
+CLT-332,John's Family Restaurant,american,Greater Charlotte,2,4.0,61,True,False,True,37.3,0.0665,35.1300477,-80.9376129
+CLT-333,1897 Market,american,Greater Charlotte,2,1.5,5,True,True,False,45.7,0.0319,35.2200728,-80.9449666
+CLT-334,Ruby Sunshine,breakfast,Ballantyne,2,2.5,326,False,True,False,45.3,0.0312,35.0710122,-80.8431394
+CLT-335,Crav’n Caribbean,american,Greater Charlotte,1,2.0,31,False,False,True,38.9,0.0694,35.2338705,-80.8728777
+CLT-336,Papi Ricko,latin_american,Elizabeth,2,2.0,198,True,True,True,41.0,0.0335,35.2206835,-80.8173615
+CLT-337,Zämbies Pizza,pizza,NoDa,1,4.5,60,False,True,False,40.5,0.076,35.2470721,-80.8054436
+CLT-338,Veltree Vegan Restaurant,sandwich,University City,2,4.0,72,False,True,True,49.0,0.0527,35.2971084,-80.7554052
+CLT-339,Primo Tuscan Grille,italian,Myers Park,2,3.5,85,False,True,True,36.0,0.036,35.1975329,-80.8255194
+CLT-340,America's Best Wings,wings,University City,1,2.5,71,False,True,False,46.3,0.0389,35.3068503,-80.7212738
+CLT-341,South 21 Jr Family Restaurant,burger,Greater Charlotte,2,3.5,95,True,True,False,46.8,0.0125,35.2826016,-80.7640675
+CLT-342,Bankers Kitchen,american,Greater Charlotte,1,3.5,274,True,True,False,42.6,0.1075,35.2340694,-80.8727534
+CLT-343,Nana Morrison's Soul Food,american,Greater Charlotte,2,2.5,48,True,False,True,53.5,0.0359,35.1902391,-80.9219509
+CLT-344,Sushiya Japan,japanese,Greater Charlotte,2,3.5,106,True,True,True,33.8,0.0571,35.0953332,-80.7789973
+CLT-345,ACE No. 3 Belmont Village,burger,Greater Charlotte,1,3.5,31,False,True,True,51.7,0.0632,35.2279076,-80.8209285
+CLT-346,Nakato Japanese Restaurant,asian,Greater Charlotte,2,4.0,324,False,True,True,35.3,0.0541,35.0879749,-80.862471
+CLT-347,El Thrifty,mexican,Greater Charlotte,1,4.0,12,True,True,False,40.3,0.0798,35.2340545,-80.8279851
+CLT-348,Sir Edmund Halley's,american,Greater Charlotte,2,2.0,500,False,False,True,38.8,0.0,35.1750358,-80.8488498
+CLT-349,Cajun Yard Dog,american,Greater Charlotte,2,3.5,33,False,True,True,34.6,0.0638,35.0970101,-80.780433
+CLT-350,Waffle House,american,Greater Charlotte,2,4.0,5,False,False,True,34.2,0.0596,35.0879614,-80.8584827
+CLT-351,Mezzanotte,italian,Greater Charlotte,1,3.5,43,False,False,True,33.0,0.113,35.171116,-80.8076868
+CLT-352,Bakersfield,mexican,Dilworth,2,4.5,12,False,False,True,48.8,0.0524,35.2020235,-80.8444723
+CLT-353,Waffle House,american,Greater Charlotte,2,4.0,129,False,True,False,52.5,0.1253,35.0763787,-80.9342952
+CLT-354,500 Degrees New York Style Pizzeria,pizza,Greater Charlotte,1,2.5,13,False,False,True,44.7,0.041,35.1534046,-80.8754837
+CLT-355,City Barbeque,barbecue,University City,1,2.0,18,True,True,True,36.7,0.0342,35.3103955,-80.7468143
+CLT-356,Flower Child,american,South End,2,4.0,5,True,True,True,38.3,0.0311,35.2150607,-80.8564915
+CLT-357,Bang Bang Burgers,burger,South End,2,1.5,17,True,False,True,36.5,0.0109,35.2105809,-80.8634238
+CLT-358,Cilantro Noodle,noodle,Plaza Midwood,2,4.0,5,False,True,True,41.2,0.0648,35.218969,-80.8119052
+CLT-359,Easy Like Sunday,american,Greater Charlotte,2,4.5,5,False,False,False,39.8,0.0785,35.1719067,-80.8493787
+CLT-360,Boudreaux’s Louisiana Kitchen,american,Greater Charlotte,2,4.0,114,False,False,True,41.4,0.0692,35.2476807,-80.8042851
+CLT-361,IHOP,breakfast,Greater Charlotte,1,3.5,119,False,True,True,38.5,0.0357,35.1795818,-80.8839932
+CLT-362,The Rusty Bucket,american,Greater Charlotte,1,4.0,68,False,True,True,35.2,0.084,35.1461193,-80.8303757
+CLT-363,Asian Wok,asian,Greater Charlotte,1,3.5,8,True,False,True,32.5,0.0,35.0909657,-80.8693398
+CLT-364,Highway 55,burger,Greater Charlotte,2,4.0,33,True,False,True,34.0,0.0665,35.0572707,-80.9345894
+CLT-365,Coasters Associate Cafe,american,Steele Creek,1,4.5,35,False,True,True,44.5,0.1047,35.1032479,-80.9437321
+CLT-366,Golden Corral,american,University City,2,3.5,6,False,False,False,37.5,0.0591,35.2935905,-80.757258
+CLT-367,Crafty Crab,seafood,University City,2,5.0,357,False,True,True,37.4,0.086,35.3102499,-80.74928
+CLT-368,Buona Vita,italian,Ballantyne,2,4.5,137,True,True,False,34.0,0.1412,35.0687538,-80.8427409
+CLT-369,Charlotte Cafe,sandwich,Greater Charlotte,1,3.0,25,False,False,False,55.0,0.0568,35.0953139,-80.7788791
+CLT-370,Fuji Hibachi & Teriyaki,japanese,Uptown,2,2.0,37,False,True,True,37.5,0.05,35.2253941,-80.8424274
+CLT-371,Ho Ho Cherry House,chinese,Montford,1,2.5,49,False,True,False,45.0,0.0664,35.2122478,-80.8171142
+CLT-372,Cantina 1511,american,Greater Charlotte,2,1.5,5,True,True,False,41.5,0.0433,35.1735534,-80.8499329
+CLT-373,Waldhorn,german,Greater Charlotte,1,2.0,24,True,False,False,39.1,0.0506,35.0765273,-80.8823553
+CLT-374,Sun's Kitchen,chinese,Greater Charlotte,1,4.0,12,False,False,False,43.8,0.0567,35.2339957,-80.8729425
+CLT-375,Uncle Maddio's Pizza,pizza,Montford,2,2.0,7,False,True,False,46.3,0.0329,35.2118948,-80.8338046
+CLT-376,Tacos Y Mas,mexican,Greater Charlotte,1,3.5,23,True,False,False,38.7,0.0497,35.1195462,-80.8799091
+CLT-377,Midtown Tavern,american,Montford,1,4.5,500,True,True,False,36.0,0.1109,35.2126381,-80.8298668
+CLT-378,Salsarita's,american,Greater Charlotte,2,1.5,95,True,True,True,45.7,0.0,35.1168347,-80.8565913
+CLT-379,The Olive Tap,american,Ballantyne,2,4.5,14,False,True,True,43.0,0.0603,35.0539031,-80.8490416
+CLT-380,Pizza Hut,pizza,Greater Charlotte,2,3.0,86,True,True,True,34.7,0.0611,35.0881911,-80.8711753
+CLT-381,Saigon Night,vietnamese,Greater Charlotte,2,2.5,305,False,True,True,37.0,0.0402,35.2036484,-80.7447861
+CLT-382,Los Paisas Restaurant,mexican,Greater Charlotte,2,4.0,147,True,True,False,39.3,0.0672,35.090005,-80.8587759
+CLT-383,Schreiber's On Rye,american,Greater Charlotte,1,4.0,39,False,True,True,49.7,0.0444,35.2338455,-80.8276171
+CLT-384,Captain Steve's,seafood,Greater Charlotte,1,4.5,13,True,True,False,38.0,0.0755,35.0574449,-80.9385857
+CLT-385,Crave Dessert Bar,cake,Uptown,1,4.0,104,False,True,False,50.5,0.0533,35.2319019,-80.8458183
+CLT-386,Lee Cafe,chinese,Greater Charlotte,2,4.5,65,False,True,True,25.6,0.0765,35.0753281,-80.9338605
+CLT-387,Cherry Sushi & Grill,asian,Greater Charlotte,2,3.0,141,False,True,True,45.7,0.0565,35.0569975,-80.9345726
+CLT-388,STIR,american,South End,1,3.0,94,True,False,True,36.8,0.0167,35.2170892,-80.8555008
+CLT-389,Kasper's Grill,american,Greater Charlotte,2,4.0,178,False,True,True,52.8,0.0409,35.3423857,-80.7707298
+CLT-390,China Buffet,chinese,Greater Charlotte,2,4.5,15,False,True,True,54.0,0.0892,35.1972551,-80.7694463
+CLT-391,Sabor Latin Street Grill,mexican,Montford,1,5.0,269,True,True,True,37.1,0.0649,35.2163315,-80.8217885
+CLT-392,Pizza Baby East,pizza,Montford,2,3.5,48,True,True,False,40.6,0.0614,35.2137792,-80.8264353
+CLT-393,Fiamma Ristorante,italian,Dilworth,2,3.5,500,True,True,False,37.0,0.0312,35.1976079,-80.852327
+CLT-394,Deejai,thai,Greater Charlotte,2,4.5,12,False,False,False,46.8,0.0921,35.201368,-80.8247409
+CLT-395,Desi District,indian,Greater Charlotte,1,3.5,500,True,False,True,39.0,0.0905,35.0738546,-80.8810466
+CLT-396,PARA,tapas,South End,2,4.5,48,True,False,False,48.0,0.0,35.2105809,-80.8633085
+CLT-397,Lang Van,american,Greater Charlotte,2,4.5,13,False,True,False,49.0,0.0515,35.2367249,-80.7745052
+CLT-398,Hooters,burger,Greater Charlotte,2,3.5,17,True,True,True,35.0,0.0814,35.1042632,-80.8797412
+CLT-399,Wan Fu Chinese Restaurant,chinese,Greater Charlotte,2,4.0,21,True,False,False,41.0,0.0128,35.0886052,-80.8614541
+CLT-400,Just Fresh,juice,Uptown,2,4.0,68,False,False,True,41.0,0.0781,35.2258399,-80.8430735

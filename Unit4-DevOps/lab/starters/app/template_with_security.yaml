@@ -1,0 +1,170 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  DSBA 6190 - Unit 4 Lab Part 3: Application Infrastructure + Governance Controls
+  Extends Part 2 with CloudTrail auditing, AWS Config recording/rules,
+  and SNS notifications for compliance events.
+
+Parameters:
+  StudentPrefix:
+    Type: String
+    Description: Unique student identifier used in resource names
+
+  ArtifactBucket:
+    Type: String
+    Description: S3 bucket name that receives CloudTrail logs and Config snapshots
+
+  RecorderExists:
+    Type: String
+    Default: "false"
+    AllowedValues:
+      - "true"
+      - "false"
+    Description: >
+      Set to "true" if an AWS Config recorder already exists in this account
+      (avoids creating a duplicate recorder which would cause a stack error).
+
+Conditions:
+  CreateRecorder: !Equals [!Ref RecorderExists, "false"]
+
+Resources:
+
+  # ---------------------------------------------------------------------------
+  # S3 Data Lake Bucket
+  # (paste your completed config from template.yaml)
+  # ---------------------------------------------------------------------------
+  DataLakeBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub "dsba6190-${StudentPrefix}-data-lake"
+
+  # ---------------------------------------------------------------------------
+  # S3 Bucket Policy — deny unencrypted uploads
+  # (paste your completed config from template.yaml)
+  # ---------------------------------------------------------------------------
+  DataLakeBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref DataLakeBucket
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: DenyUnencryptedObjectUploads
+            Effect: Deny
+            Principal: "*"
+            Action: s3:PutObject
+            Resource: !Sub "arn:aws:s3:::dsba6190-${StudentPrefix}-data-lake/*"
+            Condition: {}  # (paste your completed Condition block from template.yaml)
+
+  # ---------------------------------------------------------------------------
+  # DynamoDB ETL Tracker Table
+  # (paste your completed config from template.yaml)
+  # ---------------------------------------------------------------------------
+  ETLTrackerTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub "dsba6190-${StudentPrefix}-etl-tracker"
+
+  # ---------------------------------------------------------------------------
+  # CloudTrail Audit Trail
+  # Docs: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html
+  # ---------------------------------------------------------------------------
+  AuditTrail:
+    Type: AWS::CloudTrail::Trail
+    Properties:
+      TrailName: !Sub "dsba6190-${StudentPrefix}-audit-trail"
+
+      # TODO: Specify the S3 bucket where CloudTrail will deliver log files.
+      # Property: S3BucketName
+      # Hint: Reference the ArtifactBucket parameter
+
+      # TODO: Set a key prefix to organize logs within the bucket.
+      # Property: S3KeyPrefix
+      # Hint: Use "cloudtrail"
+
+      # TODO: Enable logging so the trail actively captures API calls.
+      # Property: IsLogging
+      # Hint: Boolean true/false
+
+      # TODO: Decide whether to record events from all regions or just the current one.
+      # Property: IsMultiRegionTrail
+      # Hint: Set to false for this lab (single-region)
+
+      # TODO: Enable log file validation to detect tampering.
+      # Property: EnableLogFileValidation
+      # Hint: Boolean true/false
+
+  # ---------------------------------------------------------------------------
+  # AWS Config Recorder (conditional — skip if one already exists)
+  # Docs: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationrecorder.html
+  # ---------------------------------------------------------------------------
+  ConfigRecorder:
+    Type: AWS::Config::ConfigurationRecorder
+    Condition: CreateRecorder
+    Properties:
+      Name: default
+
+      # TODO: Provide the IAM role ARN that Config will use to record resources.
+      # Property: RoleARN
+      # Hint: Use !Sub with the AWS::AccountId pseudo-parameter and the role name "LabRole"
+
+      # TODO: Specify which resource types to record.
+      # Property: RecordingGroup
+      # Hint: Set AllSupported to true and IncludeGlobalResourceTypes to false
+
+  # ---------------------------------------------------------------------------
+  # AWS Config Delivery Channel (conditional)
+  # Docs: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html
+  # ---------------------------------------------------------------------------
+  ConfigDeliveryChannel:
+    Type: AWS::Config::DeliveryChannel
+    Condition: CreateRecorder
+    DependsOn: ConfigRecorder
+    Properties:
+      # TODO: Specify the S3 bucket where Config will deliver snapshots.
+      # Property: S3BucketName
+      # Hint: Reference the ArtifactBucket parameter
+
+      # TODO: Set a key prefix to organize Config data within the bucket.
+      # Property: S3KeyPrefix
+      # Hint: Use "config"
+
+  # ---------------------------------------------------------------------------
+  # AWS Config Rule — S3 server-side encryption
+  # Docs: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html
+  # ---------------------------------------------------------------------------
+  S3EncryptionRule:
+    Type: AWS::Config::ConfigRule
+    Properties:
+      ConfigRuleName: s3-bucket-server-side-encryption-enabled
+
+      # TODO: Define the rule source using a managed AWS Config rule.
+      # Property: Source
+      # Hint: Owner is "AWS"; SourceIdentifier is "S3_BUCKET_SERVER_SIDE_ENCRYPTION_ENABLED"
+
+  # ---------------------------------------------------------------------------
+  # SNS Topic for Config Notifications
+  # Docs: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-topic.html
+  # ---------------------------------------------------------------------------
+  ConfigNotificationTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      # TODO: Give the SNS topic a descriptive name scoped to your student prefix.
+      # Property: TopicName
+      # Hint: Use !Sub to include ${StudentPrefix} in the name
+
+Outputs:
+  DataLakeBucketArn:
+    Description: ARN of the S3 data lake bucket
+    Value: !GetAtt DataLakeBucket.Arn
+
+  ETLTrackerTableName:
+    Description: Name of the DynamoDB ETL tracker table
+    Value: !Ref ETLTrackerTable
+
+  AuditTrailArn:
+    Description: ARN of the CloudTrail audit trail
+    Value: !GetAtt AuditTrail.Arn
+
+  ConfigRuleName:
+    Description: Name of the AWS Config S3 encryption rule
+    Value: !Ref S3EncryptionRule

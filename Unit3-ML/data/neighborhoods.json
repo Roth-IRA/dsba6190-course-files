@@ -1,0 +1,17 @@
+{
+  "neighborhoods": [
+    {"name": "Uptown", "bounds": [35.220, -80.855, 35.235, -80.835]},
+    {"name": "South End", "bounds": [35.205, -80.865, 35.220, -80.845]},
+    {"name": "NoDa", "bounds": [35.245, -80.825, 35.260, -80.805]},
+    {"name": "Plaza Midwood", "bounds": [35.215, -80.815, 35.230, -80.795]},
+    {"name": "Dilworth", "bounds": [35.195, -80.855, 35.215, -80.835]},
+    {"name": "Myers Park", "bounds": [35.180, -80.840, 35.200, -80.815]},
+    {"name": "University City", "bounds": [35.290, -80.760, 35.320, -80.720]},
+    {"name": "Ballantyne", "bounds": [35.050, -80.860, 35.080, -80.830]},
+    {"name": "Montford", "bounds": [35.205, -80.835, 35.218, -80.815]},
+    {"name": "Elizabeth", "bounds": [35.210, -80.830, 35.225, -80.810]},
+    {"name": "Steele Creek", "bounds": [35.090, -80.950, 35.130, -80.900]},
+    {"name": "Matthews", "bounds": [35.110, -80.730, 35.140, -80.700]}
+  ],
+  "default": "Greater Charlotte"
+}
