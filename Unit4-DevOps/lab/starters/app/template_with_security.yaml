@@ -54,6 +54,9 @@ Resources:
             Action: s3:PutObject
             Resource: !Sub "arn:aws:s3:::dsba6190-${StudentPrefix}-data-lake/*"
             Condition: {}  # (paste your completed Condition block from template.yaml)
+            # TODO: Add a StringNotEquals condition that denies requests
+            # where the s3:x-amz-server-side-encryption header is NOT "AES256".
+            # Hint: The key is "s3:x-amz-server-side-encryption"
 
   # ---------------------------------------------------------------------------
   # DynamoDB ETL Tracker Table
