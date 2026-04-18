@@ -36,6 +36,17 @@ Resources:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: !Sub "dsba6190-${StudentPrefix}-data-lake"
+      # TODO: Enable versioning on this bucket.
+      # Property: VersioningConfiguration
+      # Hint: Set Status to "Enabled"
+
+      # TODO: Enable server-side encryption using AES256.
+      # Property: BucketEncryption
+      # Hint: Use ServerSideEncryptionConfiguration with ServerSideEncryptionByDefault
+
+      # TODO: Add a lifecycle rule to transition objects to GLACIER after 90 days.
+      # Property: LifecycleConfiguration
+      # Hint: Rules is a list; each rule needs an Id, Status, and Transitions
 
   # ---------------------------------------------------------------------------
   # S3 Bucket Policy — deny unencrypted uploads
