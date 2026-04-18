@@ -1,0 +1,88 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  DSBA 6190 - Unit 4 Lab Part 2: Application Infrastructure
+  Provisions a versioned, encrypted S3 data lake bucket with a lifecycle
+  policy and a DynamoDB table for ETL job tracking.
+
+Parameters:
+  StudentPrefix:
+    Type: String
+    Description: Unique student identifier used in resource names
+
+Resources:
+
+  # ---------------------------------------------------------------------------
+  # S3 Data Lake Bucket
+  # Docs: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-bucket.html
+  # ---------------------------------------------------------------------------
+  DataLakeBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub "dsba6190-${StudentPrefix}-data-lake"
+
+      # TODO: Enable versioning on this bucket.
+      # Property: VersioningConfiguration
+      # Hint: Set Status to "Enabled"
+
+      # TODO: Enable server-side encryption using AES256.
+      # Property: BucketEncryption
+      # Hint: Use ServerSideEncryptionConfiguration with ServerSideEncryptionByDefault
+
+      # TODO: Add a lifecycle rule to transition objects to GLACIER after 90 days.
+      # Property: LifecycleConfiguration
+      # Hint: Rules is a list; each rule needs an Id, Status, and Transitions
+
+  # ---------------------------------------------------------------------------
+  # S3 Bucket Policy — deny unencrypted uploads
+  # Docs: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-bucketpolicy.html
+  # ---------------------------------------------------------------------------
+  DataLakeBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref DataLakeBucket
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: DenyUnencryptedObjectUploads
+            Effect: Deny
+            Principal: "*"
+            Action: s3:PutObject
+            Resource: !Sub "arn:aws:s3:::dsba6190-${StudentPrefix}-data-lake/*"
+            Condition:
+              # TODO: Add a StringNotEquals condition that denies requests
+              # where the s3:x-amz-server-side-encryption header is NOT "AES256".
+              # Hint: The key is "s3:x-amz-server-side-encryption"
+
+  # ---------------------------------------------------------------------------
+  # DynamoDB ETL Tracker Table
+  # Docs: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html
+  # ---------------------------------------------------------------------------
+  ETLTrackerTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub "dsba6190-${StudentPrefix}-etl-tracker"
+
+      # TODO: Set the billing mode to on-demand (no capacity planning required).
+      # Property: BillingMode
+      # Hint: Use "PAY_PER_REQUEST"
+
+      # TODO: Define the primary key (partition key + sort key).
+      # Property: KeySchema
+      # Hint: job_id is the HASH key; run_timestamp is the RANGE key
+
+      # TODO: Declare the attribute types for each key defined in KeySchema.
+      # Property: AttributeDefinitions
+      # Hint: Both job_id and run_timestamp are String ("S") type
+
+      # TODO: Add tags to identify this resource.
+      # Property: Tags
+      # Hint: Add at least ManagedBy: CloudFormation and Course: DSBA-6190
+
+Outputs:
+  DataLakeBucketArn:
+    Description: ARN of the S3 data lake bucket
+    Value: !GetAtt DataLakeBucket.Arn
+
+  ETLTrackerTableName:
+    Description: Name of the DynamoDB ETL tracker table
+    Value: !Ref ETLTrackerTable
